@@ -1,2 +1,3 @@
 install jest plus starting tests
 tidy babel.rc
+browser list into package.config
