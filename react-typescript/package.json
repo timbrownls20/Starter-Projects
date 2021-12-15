@@ -6,17 +6,18 @@
   "scripts": {
     "test": "jest",
     "start": "webpack serve --config webpack.config.js",
-    "build": "webpack"
+    "build": "webpack",
+    "update": "npx npm-check-updates -u && npm install && npm test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/plugin-proposal-class-properties": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "@babel/preset-react": "^7.16.0",
-    "@babel/preset-typescript": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-proposal-class-properties": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.3",
@@ -34,8 +35,8 @@
     "style-loader": "^3.3.1",
     "ts-jest": "^27.1.1",
     "ts-loader": "^9.2.6",
-    "typescript": "^4.5.2",
-    "webpack": "^5.64.4",
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
   },
@@ -47,11 +48,13 @@
     "testEnvironment": "jsdom",
     "setupFilesAfterEnv": [
       "./setupTests.ts"
-    ],  
+    ],
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
-    "roots": ["<rootDir>/src"]
+    "roots": [
+      "<rootDir>/src"
+    ]
   },
   "browserslist": {
     "production": [
