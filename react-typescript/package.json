@@ -1,0 +1,68 @@
+{
+  "name": "react-latest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack serve --config webpack.config.js",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.3",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-router-dom": "^5.3.2",
+    "@types/webpack-env": "^1.16.3",
+    "babel-jest": "^27.4.5",
+    "babel-loader": "^8.2.3",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.5",
+    "source-map-loader": "^3.0.0",
+    "style-loader": "^3.3.1",
+    "ts-jest": "^27.1.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "./setupTests.ts"
+    ],  
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "roots": ["<rootDir>/src"]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
