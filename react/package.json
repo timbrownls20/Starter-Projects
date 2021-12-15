@@ -6,24 +6,25 @@
   "scripts": {
     "test": "jest",
     "start": "webpack serve --config webpack.config.js",
-    "build": "webpack"
+    "build": "webpack",
+    "update": "npx npm-check-updates -u && npm install && npm test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/plugin-proposal-class-properties": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "@babel/preset-react": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-proposal-class-properties": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
-    "babel-jest": "^27.4.4",
+    "babel-jest": "^27.4.5",
     "babel-loader": "^8.2.3",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
-    "jest": "^27.4.4",
+    "jest": "^27.4.5",
     "source-map-loader": "^3.0.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.65.0",
@@ -36,7 +37,9 @@
   },
   "jest": {
     "testEnvironment": "jsdom",
-    "setupFilesAfterEnv": ["./setupTests.js"] 
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ]
   },
   "browserslist": {
     "production": [
