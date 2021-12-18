@@ -4,8 +4,6 @@ const { app, server } = require("./app");
 
 describe("Smoke test", function () {
   test("responds with correct text", function (done) {
-    console.log("test start");
-
     request(app)
       .get("/")
       .expect(200)
