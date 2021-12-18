@@ -1,2 +1,2 @@
-npm install
+file load
 remove package.lock
