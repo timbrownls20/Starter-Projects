@@ -5,7 +5,7 @@ import App from './App';
 test('App can render', () => {
   render(<App />);
 
-  const title = screen.getByText(/This is my React TS App/i);
+  const title = screen.getByText(/React TypeScript app from scratch/i);
   expect(title).toBeInTheDocument();
 
 });
