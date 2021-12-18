@@ -1,2 +1,3 @@
-file load
+file loader
+improved style for demo page
 remove package.lock
