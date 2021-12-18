@@ -1,4 +1,2 @@
-file loader
-improved style for demo page
 resolve test issue with images and css
 remove package.lock
