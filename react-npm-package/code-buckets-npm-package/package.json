@@ -1,6 +1,6 @@
 {
-  "name": "react-typescript-from-scratch",
-  "version": "1.0.0",
+  "name": "hello-from-code-buckets",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -42,7 +42,7 @@
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
